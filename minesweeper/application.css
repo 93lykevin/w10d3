@@ -1,0 +1,58 @@
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile {
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border-top: 2px solid rgb(235, 235, 235);
+  border-left: 2px solid rgb(235, 235, 235);
+  border-bottom: 2px solid darkgray;
+  border-right: 2px solid darkgray;
+  font-size: 12px;
+}
+
+.tile:active {
+  border-bottom: 2px solid rgb(235, 235, 235);
+  border-right: 2px solid rgb(235, 235, 235);
+  border-top: 2px solid darkgray;
+  border-left: 2px solid darkgray;
+}
+
+.tile-revealed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  font-size: 16px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 20px;
+  z-index: 2;
+  height: 40%;
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -20%;
+  margin-left: -20%;
+
+  background-color: red;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+}
